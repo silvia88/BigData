@@ -17,6 +17,7 @@
     <!--<script src="./js/gmaps.js"></script>
     <script src="./js/google.js"></script>-->
     <script src="./js/raphael.min.js"></script>
+    <script src="./js/waves.min.js"></script>
     <script src="./js/jquery-1.12.3.min.js"></script>
     <script src="./js/jquery-2.1.4.min.js"></script>
     <script src="./js/jquery-ui.min.js"></script>
@@ -45,7 +46,7 @@
     <script src="./js/Chart.bundle.js"></script>
     <script src="./js/jquery.knob.min.js"></script>
     <script src="./js/jquery.slimscroll.js"></script>
-
+    
     <style>
         article.qvobject {
             position: absolute;
@@ -57,7 +58,7 @@
 <body class="theme-red">
 
     <!--#### Page Loader ####-->
-    <!--<div class="page-loader-wrapper">
+    <div class="page-loader-wrapper">
         <div class="loader">
             <div class="md-preloader pl-size-md">
                 <svg viewbox="0 0 75 75">
@@ -66,7 +67,7 @@
             </div>
             <p>Please wait...</p>
         </div>
-    </div>-->
+    </div>
     <!-- #### END Page Loader ####-->
     <!-- #### Overlay For Sidebars ####-->
     <div class="overlayBigData"></div>
@@ -175,14 +176,14 @@
                 <ul class="list">
                     <!-- ####PAGE SELECTION ####-->
                     <li class="header">MAIN NAVIGATION</li>
-                    <li class="active">
-                        <a class="material-icons" href="BigData1.html">
-                            <span>SENTIMENT</span>
+                    <li>
+                        <a href="BigData1.html">
+                            <span id="sentimentButton" style="color:red">SENTIMENT</span>
                         </a>
                     </li>
                     <li>
-                        <a class="material-icons" href="BigData1.html">
-                            <span># TWEETS</span>
+                        <a>
+                            <span id="tweetButton"># TWEETS</span>
                         </a>
                     </li>
                     <!-- #### END OF PAGE SELECTION ####-->

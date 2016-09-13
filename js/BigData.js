@@ -16,7 +16,7 @@ require.config({
     baseUrl: (config.isSecure ? "https://" : "http://") + config.host + (config.port ? ":" + config.port : "") + config.prefix + "resources"
 });
 
-require(["js/qlik", "js/jquery.sparkline.js", "js/loader.js", "js/jquery.flot.js", "js/raphael.min.js", "js/morris.js", "js/jquery-jvectormap-1.2.2.min.js", "./js/jquery-jvectormap-it_regions-mill.js", "./js/Chart.bundle.js", "./js/bootstrap-select.js", "./js/jquery.knob.min.js"], function (qlik) {
+require(["js/qlik", "js/jquery.sparkline.js", "js/loader.js",  "./js/waves.min.js","js/jquery.flot.js", "js/raphael.min.js", "js/morris.js", "js/jquery-jvectormap-1.2.2.min.js", "./js/jquery-jvectormap-it_regions-mill.js", "./js/Chart.bundle.js", "./js/bootstrap-select.js", "./js/jquery.knob.min.js"], function (qlik) {
     qlik.setOnError(function (error) {
         alert(error.message);
     });
@@ -28,6 +28,14 @@ require(["js/qlik", "js/jquery.sparkline.js", "js/loader.js", "js/jquery.flot.js
     var data = [], totalPoints = 110;
 
     $(function () {
+
+        setTimeout(function () { $('.page-loader-wrapper').fadeOut(); }, 50);
+
+        $('#tweetButton').click(function () {
+            document.getElementById('tweetButton').style.color = 'red';
+            document.getElementById('sentimentButton').style.color = 'black';
+        });
+
         map();
         initRealTimeChart();
         //initRealTimeChart1();
@@ -524,27 +532,32 @@ require(["js/qlik", "js/jquery.sparkline.js", "js/loader.js", "js/jquery.flot.js
 
     //Left Sidebar - Function =================================================================================================
     function leftsidebar() {
-        var _this = this;
-        var $body = $('body');
-        var $overlay = $('.overlay');
+        //var _this = this;
+        //var $body = $('body');
+        //var $overlay = $('.overlay');
 
-        //Close sidebar
-        $(window).click(function (e) {
-            var $target = $(e.target);
-            if (e.target.nodeName.toLowerCase() === 'a') { $target = $(e.target).parent(); }
+        ////Close sidebar
+        //$(window).click(function (e) {
+        //    var $target = $(e.target);
+        //    if (e.target.nodeName.toLowerCase() === 'a') { $target = $(e.target).parent(); }
 
-            if (!$target.hasClass('bars') && _this.isOpen() && $target.parents('#leftsidebar').length === 0) {
-                if (!$target.hasClass('js-right-sidebar')) $overlay.fadeOut();
-                $body.removeClass('overlay-open');
-            }
-        });
+        //    if (!$target.hasClass('bars') && _this.isOpen() && $target.parents('#leftsidebar').length === 0) {
+        //        if (!$target.hasClass('js-right-sidebar')) $overlay.fadeOut();
+        //        $body.removeClass('overlay-open');
+        //    }
+        //});
 
-        //When page load
-        $.each($('.menu .list li.active'), function (i, val) {
-            var $activeAnchors = $(val).find('a:eq(0)');
+        ////When page load
+        //$.each($('.menu .list li.active'), function (i, val) {
+        //    var $activeAnchors = $(val).find('a:eq(0)');
 
-            $activeAnchors.addClass('toggled');
-            $activeAnchors.next().show();
-        });
+        //    $activeAnchors.addClass('toggled');
+        //    $activeAnchors.next().show();
+        //});
+
+        //Set Waves
+        Waves.attach('.menu .list a', ['waves-block']);
+        Waves.init();
+
     }
 });

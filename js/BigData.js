@@ -16,7 +16,7 @@ require.config({
     baseUrl: (config.isSecure ? "https://" : "http://") + config.host + (config.port ? ":" + config.port : "") + config.prefix + "resources"
 });
 
-require(["js/qlik", "js/jquery.sparkline.js", "js/loader.js",  "./js/waves.min.js","js/jquery.flot.js", "js/raphael.min.js", "js/morris.js", "js/jquery-jvectormap-1.2.2.min.js", "./js/jquery-jvectormap-it_regions-mill.js", "./js/Chart.bundle.js", "./js/bootstrap-select.js", "./js/jquery.knob.min.js"], function (qlik) {
+require(["js/qlik", "js/jquery.sparkline.js", "js/loader.js",  "./js/waves.min.js","js/jquery.flot.js", "js/raphael.min.js", "js/morris.js", "js/jquery-jvectormap-1.2.2.min.js", "./js/jquery-jvectormap-it_regions-mill.js", "./js/Chart.bundle.js", "./js/bootstrap-select.js", "./js/jquery.knob.min.js", "./js/sweetalert.min.js"], function (qlik) {
     qlik.setOnError(function (error) {
         alert(error.message);
     });
@@ -33,7 +33,18 @@ require(["js/qlik", "js/jquery.sparkline.js", "js/loader.js",  "./js/waves.min.j
 
         $('#tweetButton').click(function () {
             document.getElementById('tweetButton').style.color = 'red';
+            document.getElementById('li#tweet').style.backgroundColor = ' #e9e9e9';
+            document.getElementById('lisentiment').style.backgroundColor = ' white';
             document.getElementById('sentimentButton').style.color = 'black';
+        });
+
+        $('#infodialog').click(function () {
+            console.log("PROVA");
+            swal({
+                title: "Sweet!",
+                text: "Here's a custom image.",
+                imageUrl: "./js/thumbs-up.png"
+            });
         });
 
         map();

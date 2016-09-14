@@ -16,7 +16,7 @@ require.config({
     baseUrl: (config.isSecure ? "https://" : "http://") + config.host + (config.port ? ":" + config.port : "") + config.prefix + "resources"
 });
 
-require(["js/qlik", "js/jquery.sparkline.js", "js/loader.js",  "./js/waves.min.js","js/jquery.flot.js", "js/raphael.min.js", "js/morris.js", "js/jquery-jvectormap-1.2.2.min.js", "./js/jquery-jvectormap-it_regions-mill.js", "./js/Chart.bundle.js", "./js/bootstrap-select.js", "./js/jquery.knob.min.js", "./js/sweetalert.min.js"], function (qlik) {
+require(["js/qlik", "js/jquery.sparkline.js", "js/loader.js", "js/jszip.min.js", "./js/kendo.all.min.js", "./js/waves.min.js", "js/jquery.flot.js", "js/raphael.min.js", "js/morris.js", "js/jquery-jvectormap-1.2.2.min.js", "./js/jquery-jvectormap-it_regions-mill.js", "./js/Chart.bundle.js", "./js/bootstrap-select.js", "./js/jquery.knob.min.js", "./js/sweetalert.min.js"], function (qlik) {
     qlik.setOnError(function (error) {
         alert(error.message);
     });
@@ -59,6 +59,9 @@ require(["js/qlik", "js/jquery.sparkline.js", "js/loader.js",  "./js/waves.min.j
         //new Chart(document.getElementById("line_chart").getContext("2d"), gaussianChart());
         // multipleAxis();
         leftsidebar();
+        createChart();
+        filter();
+        
     });
 
     function firstGauge() {
@@ -570,5 +573,88 @@ require(["js/qlik", "js/jquery.sparkline.js", "js/loader.js",  "./js/waves.min.j
         Waves.attach('.menu .list a', ['waves-block']);
         Waves.init();
 
+    }
+
+    function createChart() {
+        $("#chart").kendoChart({
+            title: {
+                text: "Hybrid car mileage report"
+            },
+            legend: {
+                position: "top"
+            },
+            series: [{
+                type: "column",
+                data: [20, 40, 45, 30, 50],
+                stack: true,
+                name: "on battery",
+                color: "#003c72"
+            }, {
+                type: "column",
+                data: [20, 30, 35, 35, 40],
+                stack: true,
+                name: "on gas",
+                color: "#0399d4"
+            }, {
+                type: "area",
+                data: [30, 38, 40, 32, 42],
+                name: "mpg",
+                color: "#642381",
+                axis: "mpg"
+            }, {
+                type: "area",
+                data: [7.8, 6.2, 5.9, 7.4, 5.6],
+                name: "l/100 km",
+                color: "#e5388a",
+                axis: "l100km"
+            }],
+            valueAxes: [{
+                title: { text: "miles" },
+                min: 0,
+                max: 100
+            }, {
+                name: "km",
+                title: { text: "km" },
+                min: 0,
+                max: 161,
+                majorUnit: 32
+            }, {
+                name: "mpg",
+                title: { text: "miles per gallon" },
+                color: "#642381"
+            }, {
+                name: "l100km",
+                title: { text: "liters per 100km" },
+                color: "#e5388a"
+            }],
+            categoryAxis: {
+                categories: ["Mon", "Tue", "Wed", "Thu", "Fri"],
+                // Align the first two value axes to the left
+                // and the last two to the right.
+                //
+                // Right alignment is done by specifying a
+                // crossing value greater than or equal to
+                // the number of categories.
+                axisCrossingValues: [0, 0, 10, 10]
+            }
+        });
+    }
+
+    function filter() {
+        $('.demo-choose-skin li').on('click', function () {
+            var $body = $('body');
+            var $this = $(this);
+
+            //var existTheme = $('.right-sidebar .demo-choose-skin li.active').data('theme');
+            if ($this.hasClass('active')) {
+                $(this).removeClass('active');
+            } else {
+                //$('.right-sidebar .demo-choose-skin li').removeClass('active');
+                //$body.removeClass('theme-' + existTheme);
+                $this.addClass('active');
+
+                $body.addClass('theme-' + $this.data('theme'));
+            }
+        });
     }
 });

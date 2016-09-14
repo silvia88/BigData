@@ -2390,7 +2390,7 @@ a {
   animation: none !important; }
 
 section.content {
-  margin: 100px 15px 0 315px;
+  margin: 100px 15px 0 415px;
   -moz-transition: 0.5s;
   -o-transition: 0.5s;
   -webkit-transition: 0.5s;
@@ -7167,7 +7167,7 @@ fieldset[disabled] .form-control {
   transition: all 0.5s;
   font-family: "Roboto", sans-serif;
   background: #fdfdfd;
-  width: 300px;
+  width: 400px;
   overflow: hidden;
   display: inline-block;
   height: calc(100vh - 70px);
@@ -7326,7 +7326,7 @@ fieldset[disabled] .form-control {
           margin: 7px 0 7px 12px;
           color: #333;
           font-weight: bold;
-          font-size: 24px;
+          font-size: 20px;
           overflow: hidden; }
       .sidebar .menu .list .ml-menu {
         list-style: none;

@@ -1,5 +1,12 @@
 ﻿<!doctype html>
 <html lang="en">
+
+
+
+<!-- ##########################################################################################################
+                                HEAD SECTION    
+    ########################################################################################################### -->
+
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Qlik Sense: Mashup</title>
@@ -70,9 +77,22 @@
         }
     </style>
 </head>
+
+
+
+
+
+<!-- ##########################################################################################################
+                                            BODY SECTION
+    ########################################################################################################### -->
 <body class="theme-red">
 
-    <!--#### Page Loader ####-->
+
+
+
+     
+    <!--////////////////////////////////////////  PAGE LOADER ////////////////////////////////////////// -->
+                               
     <div class="page-loader-wrapper">
         <div class="loader">
             <div class="md-preloader pl-size-md">
@@ -83,10 +103,25 @@
             <p>Please wait...</p>
         </div>
     </div>
-    <!-- #### END Page Loader ####-->
-    <!-- #### Overlay For Sidebars ####-->
+
+    <!-- //// END Page Loader -->
+
+
+
+
+
+
+    <!--////////////////////////////////////////  OVERLAY FOR SIDEBARS ////////////////////////////////////////// -->
+
     <div class="overlayBigData"></div>
-    <!-- #### END Overlay For Sidebars ####-->
+
+    <!-- //// END Overlay For Sidebars-->
+
+
+
+
+
+
     <!--<div id="dashboardbigdata" class="wrapper">
         <div id="container1">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="width: 100%;">
@@ -148,7 +183,17 @@
         </aside>
     </section>-->
     <!--Parte con leftbar-->
-    <!--#### RED NAVBAR ###-->
+
+
+
+
+
+
+
+
+
+    <!--////////////////////////////////////////  RED NAVBAR  ////////////////////////////////////////// -->
+
     <nav class="navbar" style="height: 80px; background-color: #E10019">
         <!--<div class="container-fluid">-->
         <div class="pull-right ">
@@ -169,7 +214,17 @@
         <!--</div>-->
     </nav>
 
-    <!-- #### VERTICAL LEFT BAR #### -->
+    <!-- //// END of RED NAVBAR -->
+
+
+
+
+
+
+
+
+    <!--////////////////////////////////////  VERTICAL LEFT BAR  /////////////////////////////////////// -->
+
     <section>
         <aside id="leftsidebar" class="sidebar">
             <!--<div class="user-info">
@@ -262,9 +317,18 @@
                 </ul>
             </div>
         </aside>
-    </section>
-    <!-- #### END VERTICAL LEFT BAR ####-->
-    <!--#### MAIN CONTEINER ####-->
+    </section><!-- //// END of VERTICAL LEFT BAR -->
+
+
+
+
+
+
+
+
+
+    <    <!--////////////////////////////////////////  MAIN CONTAINER  ////////////////////////////////////////// -->
+
     <section class=" content container-fluid" style="width: 100%;">
 
         <!--<div class="block-header">
@@ -322,217 +386,370 @@
                 </div>
             </div>
         </div>-->
-        <!--#### FIRST ROW WITH THE 4 INFO BOXES AT THE TOP ####-->
+
+
+
+
+
+        <!--=================================== FIRST ROW WITH THE 4 INFO BOXES ON TOP =======================================:-->
         <div class="row clearfix">
+
+
+
+
+            <!------------------------------ INFO BOX 1 ------------------------------->
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                 <div class="info-box bg-purple hover-expand-effect">
                     <div class="icon">
-                        <!--<i class="material-icons">playlist_add_check</i>-->
+                        <i class="material-icons">playlist_add_check</i><!---choose the right icon here!!-->
                     </div>
                     <div class="content">
                         <div class="text">NEW TASKS</div>
                         <div class="number count-to" data-from="0" data-to="125" data-speed="15" data-fresh-interval="20"></div>
                     </div>
                 </div>
-            </div>
+            </div><!------------ END INFO BOX 1-->
+
+
+
+
+
+            <!----------- INFO BOX 2 ------------------------------->
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                 <div class="info-box bg-light-blue hover-expand-effect">
                     <div class="icon">
-                        <!--<i class="material-icons">help</i>-->
+                        <i class="material-icons">help</i><!---choose the right icon here!!-->
                     </div>
                     <div class="content">
-                        <!--<div class="text">NEW TICKETS</div>-->
+                        <div class="text">NEW TICKETS</div>
                         <div class="number count-to" data-from="0" data-to="257" data-speed="1000" data-fresh-interval="20"></div>
                     </div>
                 </div>
-            </div>
+            </div><!------------ END INFO BOX 2 -->
+
+
+
+
+
+
+            <!------------------------------ INFO BOX 3 ------------------------------->
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                 <div class="info-box bg-light-green hover-expand-effect">
                     <div class="icon">
-                        <!--<i class="material-icons">forum</i>-->
+                        <i class="material-icons">forum</i><!---choose the right icon here!!-->
                     </div>
                     <div class="content">
                         <div class="text">NEW COMMENTS</div>
                         <div class="number count-to" data-from="0" data-to="243" data-speed="1000" data-fresh-interval="20"></div>
                     </div>
                 </div>
-            </div>
+            </div><!------------ END INFO BOX 3 -->
+
+
+
+
+
+
+
+            <!------------------------------ INFO BOX 4 ------------------------------->
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                 <div class="info-box bg-orange hover-expand-effect">
                     <div class="icon">
-                        <!--<i class="material-icons">person_add</i>-->
+                        <i class="material-icons">person_add</i><!---choose the right icon here!!-->
                     </div>
                     <div class="content">
                         <div class="text">NEW VISITORS</div>
                         <div class="number count-to" data-from="0" data-to="1225" data-speed="1000" data-fresh-interval="20"></div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!--#### END FIRST ROW WITH THE 4 INFO BOXES AT THE TOP ####-->
-        <!--#### SECOND ROW WITH MAP AND 2 CHARTS ####-->
+            </div><!---------- END INFO BOX 4 -->
+
+
+
+
+
+
+        </div><!--========= END FIRST ROW WITH THE 4 INFO BOXES ON TOP -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--=================================== SECOND ROW WITH MAP AND 2 CHARTS ==================================-->
         <div class="row clearfix">
             <!--<div class="firstrow">-->
+
+
+
+
+
+
+
+
+            <!--++++++++++++++++++++++++++++++++++++++++++ MAIN BOX CONTAINER +++++++++++++++++++++++++++++++++++++++++++-->
             <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
-                <!--#### MAP ####-->
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="padding-left:0px;">
-                    <div class="card" style="height: 1000px;">
-                        <div class="header">
-                            <h2>MAP SENTIMENT</h2>
-                        </div>
-                        <div class="body">
-                            <!--<div id="real_time_chart1" class="dashboard-flot-chart" style="position:relative;">
-                            </div>-->
-                            <!--<div id="gmap_basic_example" class="gmap"></div>-->
-                            <!--<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=svdezAlqZP2WIeKGiLW4EUnoJvnxVP7i&amp;width=100%&amp;height=600&amp;lang=tr_TR&amp;sourceType=constructor&amp;scroll=true"></script>-->
-                            <div id="world-map-markers" style="width: 840px; height: 900px"></div>
-                        </div>
-                    </div>
-                </div>
-                <!--#### END OF MAP ####-->
 
 
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="padding-right:0px;">
-                    <!--#### TREND SENTIMENT GRAPH ####-->
-                    <div class="card">
-                        <div class="header">
-                            <h2>TREND SENTIMENT</h2>
-                            <div class="pull-right">
-                                <div class="switch panel-switch-btn">
-                                    <span class="m-r-10 font-12">REAL TIME</span>
-                                    <label>OFF<input type="checkbox" id="realtime" checked><span class="lever switch-col-cyan"></span>ON</label>
+
+
+
+
+
+
+                        <!--::::::::::::::::::::::::::::::::::::    MAP   :::::::::::::::::::::::::::::::::::::-->
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="padding-left:0px;">
+                            <div class="card" style="height: 1000px;">
+                                <div class="header">
+                                    <h2>MAP SENTIMENT</h2>
+                                </div>
+                                <div class="body">
+                                    <!--<div id="real_time_chart1" class="dashboard-flot-chart" style="position:relative;">
+                                    </div>-->
+                                    <!--<div id="gmap_basic_example" class="gmap"></div>-->
+                                    <!--<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=svdezAlqZP2WIeKGiLW4EUnoJvnxVP7i&amp;width=100%&amp;height=600&amp;lang=tr_TR&amp;sourceType=constructor&amp;scroll=true"></script>-->
+                                    <div id="world-map-markers" style="width: 840px; height: 900px"></div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="body">
-                            <div id="real_time_chart" class="dashboard-flot-chart" style="position:relative;">
-                            </div>
-                        </div>
-                    </div>
-                    <!--#### STATISTICS SENTIMENT GRAPH ####-->
-                    <div class="card">
-                        <div class="header">
-                            <h2>STATISTICS SENTIMENT</h2>
-                        </div>
-                        <div class="body">
-                            <!--<div id="multiple_axis_chart" class="flot-chart" style="padding: 0px; position: relative;"></div>-->
-                            <!--<div id="donut_chart" class="graph"></div>-->
-                            <!--<div id="donut_chart" class="graph"></div>-->
-                            <!--<canvas id="line_chart" height="150"></canvas>-->
-                            <!--<div id="series_chart_div" style="width: 800px; height: 500px;"></div>-->
-                            <div id="chart"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        </div><!--::::::::::: END OF MAP -->
 
-            <!--#### LISTS ON THE RIGHTS ####-->
+
+
+
+
+
+
+
+
+
+
+
+
+                        <!--::::::::::::::::::::::::::::    CHARTS CONTAINER   :::::::::::::::::::::::::::::-->
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="padding-right:0px;">
+
+
+
+
+
+
+                                    <!-------------------------- TREND SENTIMENT GRAPH -------------------------->
+                                    <div class="card">
+                                        <div class="header">
+                                            <h2>TREND SENTIMENT</h2>
+                                            <div class="pull-right">
+                                                <div class="switch panel-switch-btn">
+                                                    <span class="m-r-10 font-12">REAL TIME</span>
+                                                    <label>OFF<input type="checkbox" id="realtime" checked><span class="lever switch-col-cyan"></span>ON</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="body">
+                                            <div id="real_time_chart" class="dashboard-flot-chart" style="position:relative;">
+                                            </div>
+                                        </div>
+                                    </div><!------ END TREND SENTIMENT GRAPH -->
+
+
+
+
+
+
+                                    <!-------------------------- STATISTICS SENTIMENT GRAPH -------------------------->
+                                    <div class="card">
+                                        <div class="header">
+                                            <h2>STATISTICS SENTIMENT</h2>
+                                        </div>
+                                        <div class="body">
+                                            <!--<div id="multiple_axis_chart" class="flot-chart" style="padding: 0px; position: relative;"></div>-->
+                                            <!--<div id="donut_chart" class="graph"></div>-->
+                                            <!--<div id="donut_chart" class="graph"></div>-->
+                                            <!--<canvas id="line_chart" height="150"></canvas>-->
+                                            <!--<div id="series_chart_div" style="width: 800px; height: 500px;"></div>-->
+                                            <div id="chart"></div>
+                                        </div>
+                                    </div><!------ END STATISTICS SENTIMENT GRAPH -->
+
+
+
+
+
+
+                        </div><!--:::::::::::: END CHARTS CONTAINER  -->
+
+
+
+
+
+
+            </div><!-- +++++++++++++++ END MAIN BOX CONTAINER -->
+
+
+
+
+
+
+
+
+
+
+            <!--++++++++++++++++++++++++ RIGHT CONTAINER OF FILTER LISTS +++++++++++++++++++++++++++-->
             <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
-                <!--####     USERNAME FILTER      ####-->
-                <div class="card" style="max-height:314px; overflow-y: auto;">
-                    <div class="body bg-indigo" style="height: 100%;">
-                            <ul id="filterName" class="demo-choose-skin">
-                                <li data-theme="red" class="active">
-                                    <span>Name1</span>
-                                </li>
-                                <li data-theme="pink">
-                                    <span>Name2</span>
-                                </li>
-                                <li data-theme="purple">
-                                    <span>Name3</span>
-                                </li>
-                                <li data-theme="deep-purple">
+                
+                
 
-                                    <span>Name4</span>
-                                </li>
-                                <li data-theme="indigo">
 
-                                    <span>Name5</span>
-                                </li>
-                            </ul>
+
+                
+                            <!-----------------------------   USERNAME FILTER    ------------------------->
+                            <div class="card" style="max-height:314px; overflow-y: auto;">
+                                <div class="body bg-indigo" style="height: 100%;">
+                                        <ul id="filterName" class="demo-choose-skin">
+                                            <li data-theme="red" class="active">
+                                                <span>Name1</span>
+                                            </li>
+                                            <li data-theme="pink">
+                                                <span>Name2</span>
+                                            </li>
+                                            <li data-theme="purple">
+                                                <span>Name3</span>
+                                            </li>
+                                            <li data-theme="deep-purple">
+
+                                                <span>Name4</span>
+                                            </li>
+                                            <li data-theme="indigo">
+
+                                                <span>Name5</span>
+                                            </li>
+                                        </ul>
                         
-                        <!--<div class="m-b--35 font-bold">LATEST SOCIAL TRENDS</div>
-                        <ul class="dashboard-stat-list">
-                            <li>
-                                #socialtrends
-                                <span class="pull-right">
-                                    <i class="material-icons">trending_up</i>
-                                </span>
-                            </li>
-                            <li>
-                                #materialdesign
-                                <span class="pull-right">
-                                    <i class="material-icons">trending_up</i>
-                                </span>
-                            </li>
-                            <li>#adminbsb</li>
-                            <li>#freeadmintemplate</li>
-                            <li>#bootstraptemplate</li>
-                            <li>
-                                #freehtmltemplate
-                                <span class="pull-right">
-                                    <i class="material-icons">trending_up</i>
-                                </span>
-                            </li>
-                        </ul>-->
-                    </div>
-                </div>
-                <!--####     MESSAGES FILTER      ####-->
-                <div class="card" style="height:314px; overflow-y: auto; margin-top: 25px;">
-                    <div class="body  bg-teal" style="height: 100%;">
-                        <div class="m-b--35 font-bold">LATEST SOCIAL TRENDS</div>
-                        <ul id="filterMessage" class="demo-choose-skin">
-                            <li data-theme="red" class="active">
-                                <span>Name1</span>
-                            </li>
-                            <li data-theme="pink">
-                                <span>Name2</span>
-                            </li>
-                            <li data-theme="purple">
-                                <span>Name3</span>
-                            </li>
-                            <li data-theme="deep-purple">
+                                    <!--<div class="m-b--35 font-bold">LATEST SOCIAL TRENDS</div>
+                                    <ul class="dashboard-stat-list">
+                                        <li>
+                                            #socialtrends
+                                            <span class="pull-right">
+                                                <i class="material-icons">trending_up</i>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            #materialdesign
+                                            <span class="pull-right">
+                                                <i class="material-icons">trending_up</i>
+                                            </span>
+                                        </li>
+                                        <li>#adminbsb</li>
+                                        <li>#freeadmintemplate</li>
+                                        <li>#bootstraptemplate</li>
+                                        <li>
+                                            #freehtmltemplate
+                                            <span class="pull-right">
+                                                <i class="material-icons">trending_up</i>
+                                            </span>
+                                        </li>
+                                    </ul>-->
+                                </div>
+                            </div><!------------- END OF USERNAME FILTER-->
 
-                                <span>Name4</span>
-                            </li>
-                            <li data-theme="indigo">
 
-                                <span>Name5</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!--####    SENTIMENT FILTER      ####-->
-                <div class="card" style="height:314px; overflow-y: auto; margin-top: 25px;">
-                    <div class="body bg-green" style="height: 100%;">
-                        <div class="m-b--35 font-bold">LATEST SOCIAL TRENDS</div>
-                        <ul class="dashboard-stat-list">
-                            <li>
-                                #socialtrends
-                                <span class="pull-right">
-                                    <i class="material-icons">trending_up</i>
-                                </span>
-                            </li>
-                            <li>
-                                #materialdesign
-                                <span class="pull-right">
-                                    <i class="material-icons">trending_up</i>
-                                </span>
-                            </li>
-                            <li>#adminbsb</li>
-                            <li>#freeadmintemplate</li>
-                            <li>#bootstraptemplate</li>
-                            <li>
-                                #freehtmltemplate
-                                <span class="pull-right">
-                                    <i class="material-icons">trending_up</i>
-                                </span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!--#### END OF LISTS ON THE RIGHTS ####-->
+
+
+
+
+
+
+
+                            <!-----------------------------    MESSAGES TEXT FILTER   ------------------------------>
+                            <div class="card" style="height:314px; overflow-y: auto; margin-top: 25px;">
+                                <div class="body  bg-teal" style="height: 100%;">
+                                    <div class="m-b--35 font-bold">LATEST SOCIAL TRENDS</div>
+                                    <ul id="filterMessage" class="demo-choose-skin">
+                                        <li data-theme="red" class="active">
+                                            <span>Name1</span>
+                                        </li>
+                                        <li data-theme="pink">
+                                            <span>Name2</span>
+                                        </li>
+                                        <li data-theme="purple">
+                                            <span>Name3</span>
+                                        </li>
+                                        <li data-theme="deep-purple">
+
+                                            <span>Name4</span>
+                                        </li>
+                                        <li data-theme="indigo">
+
+                                            <span>Name5</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div><!------------- END OF MESSAGES TEXT FILTER -->
+
+
+
+
+
+
+
+
+
+
+                            <!-----------------------------    SENTIMENT FILTER    ------------------------------>
+                            <div class="card" style="height:314px; overflow-y: auto; margin-top: 25px;">
+                                <div class="body bg-green" style="height: 100%;">
+                                    <div class="m-b--35 font-bold">LATEST SOCIAL TRENDS</div>
+                                    <ul class="dashboard-stat-list">
+                                        <li>
+                                            #socialtrends
+                                            <span class="pull-right">
+                                                <i class="material-icons">trending_up</i>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            #materialdesign
+                                            <span class="pull-right">
+                                                <i class="material-icons">trending_up</i>
+                                            </span>
+                                        </li>
+                                        <li>#adminbsb</li>
+                                        <li>#freeadmintemplate</li>
+                                        <li>#bootstraptemplate</li>
+                                        <li>
+                                            #freehtmltemplate
+                                            <span class="pull-right">
+                                                <i class="material-icons">trending_up</i>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div><!------------ END OF SENTIMENT FILTER -->
+
+
+
+
+
+            </div><!--++++++++++++ END OF RIGHT CONTAINER OF FILTER LIST -->
+
+
+
+
             <!--#### END SECOND ROW WITH MAP AND 2 CHARTS ####-->
             <!--#### PRESELECTION BUTTONS ####-->
             <div class="row clearfix">
@@ -617,7 +834,8 @@
             </div>-->
         </div>
     </section>
-    <!--#### END MAIN CONTEINER ####-->
+
+    <!--///// END MAIN CONTaINER ####-->
 
 
 </body>
